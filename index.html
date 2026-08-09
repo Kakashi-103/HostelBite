@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
@@ -7,38 +6,28 @@
 <meta charset="UTF-8">
 
 <meta name="viewport"
-content="width=device-width, initial-scale=1.0">
+      content="width=device-width, initial-scale=1.0">
 
 <title>HostelBite</title>
-
 
 <style>
 
 * {
-
     box-sizing: border-box;
-
     margin: 0;
-
     padding: 0;
-
 }
-
 
 body {
 
-    font-family:
-        Arial,
-        sans-serif;
+    font-family: Arial, sans-serif;
 
     background: #111;
 
     color: white;
 
     padding: 10px;
-
 }
-
 
 .container {
 
@@ -51,9 +40,7 @@ body {
     border-radius: 20px;
 
     overflow: hidden;
-
 }
-
 
 .header {
 
@@ -67,41 +54,31 @@ body {
     padding: 25px;
 
     text-align: center;
-
 }
-
 
 .header-icon {
 
     font-size: 42px;
-
 }
-
 
 .header h1 {
 
     margin-top: 8px;
 
     font-size: 27px;
-
 }
-
 
 .header p {
 
     color: #d9aaaa;
 
     margin-top: 5px;
-
 }
-
 
 .content {
 
     padding: 20px;
-
 }
-
 
 .section-title {
 
@@ -110,16 +87,12 @@ body {
     font-weight: bold;
 
     margin-bottom: 15px;
-
 }
-
 
 .meal-section {
 
     margin-bottom: 30px;
-
 }
-
 
 .meal-title {
 
@@ -130,9 +103,7 @@ body {
     font-weight: bold;
 
     margin-bottom: 10px;
-
 }
-
 
 .food-card {
 
@@ -145,18 +116,14 @@ body {
     padding: 15px;
 
     margin-bottom: 10px;
-
 }
-
 
 .food-name {
 
     font-weight: bold;
 
     font-size: 16px;
-
 }
-
 
 .food-price {
 
@@ -165,9 +132,7 @@ body {
     margin-top: 4px;
 
     font-size: 14px;
-
 }
-
 
 .quantity {
 
@@ -178,9 +143,7 @@ body {
     justify-content: space-between;
 
     margin-top: 13px;
-
 }
-
 
 .quantity button {
 
@@ -198,17 +161,15 @@ body {
 
     font-size: 21px;
 
+    cursor: pointer;
 }
-
 
 .qty-value {
 
     font-size: 19px;
 
     font-weight: bold;
-
 }
-
 
 input {
 
@@ -227,9 +188,7 @@ input {
     color: white;
 
     font-size: 16px;
-
 }
-
 
 .total-box {
 
@@ -240,18 +199,14 @@ input {
     padding: 17px;
 
     margin-top: 20px;
-
 }
-
 
 .total-row {
 
     display: flex;
 
     justify-content: space-between;
-
 }
-
 
 .total-price {
 
@@ -260,9 +215,7 @@ input {
     font-size: 21px;
 
     font-weight: bold;
-
 }
-
 
 .order-button {
 
@@ -284,8 +237,8 @@ input {
 
     font-weight: bold;
 
+    cursor: pointer;
 }
-
 
 .admin-button {
 
@@ -303,8 +256,8 @@ input {
 
     color: #888;
 
+    cursor: pointer;
 }
-
 
 .admin-panel {
 
@@ -317,9 +270,7 @@ input {
     background: #202020;
 
     border-radius: 13px;
-
 }
-
 
 .admin-panel h2 {
 
@@ -327,15 +278,18 @@ input {
 
     margin-bottom: 18px;
 
+    margin-top: 18px;
 }
 
+.admin-panel h2:first-child {
+
+    margin-top: 0;
+}
 
 .admin-section {
 
     margin-bottom: 25px;
-
 }
-
 
 .admin-food {
 
@@ -346,16 +300,12 @@ input {
     border-radius: 9px;
 
     margin-bottom: 8px;
-
 }
-
 
 .admin-food-name {
 
     font-weight: bold;
-
 }
-
 
 .admin-food-price {
 
@@ -363,8 +313,8 @@ input {
 
     font-size: 13px;
 
+    margin-top: 4px;
 }
-
 
 .admin-actions {
 
@@ -373,9 +323,7 @@ input {
     gap: 7px;
 
     margin-top: 9px;
-
 }
-
 
 .admin-actions button {
 
@@ -391,8 +339,8 @@ input {
 
     color: white;
 
+    cursor: pointer;
 }
-
 
 .add-food {
 
@@ -408,8 +356,8 @@ input {
 
     color: #e06a6a;
 
+    cursor: pointer;
 }
-
 
 .order-card {
 
@@ -420,9 +368,7 @@ input {
     border-radius: 9px;
 
     margin-bottom: 8px;
-
 }
-
 
 .delete-order {
 
@@ -440,22 +386,19 @@ input {
 
     color: #e06a6a;
 
+    cursor: pointer;
 }
-
 
 .summary {
 
     display: grid;
 
-    grid-template-columns:
-        1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 
     gap: 8px;
 
     margin-bottom: 18px;
-
 }
-
 
 .summary-card {
 
@@ -468,9 +411,7 @@ input {
     padding: 12px;
 
     text-align: center;
-
 }
-
 
 .summary-number {
 
@@ -479,25 +420,90 @@ input {
     font-size: 22px;
 
     font-weight: bold;
-
 }
-
 
 .summary-label {
 
     color: #999;
 
     font-size: 11px;
-
 }
 
+.food-summary {
 
-.admin-input {
+    background: #292929;
 
-    margin-top: 7px;
+    border-radius: 12px;
 
+    padding: 14px;
+
+    margin-bottom: 12px;
 }
 
+.food-summary-title {
+
+    color: #d94a4a;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+.food-summary-row {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 9px 0;
+
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.food-summary-row:last-child {
+
+    border-bottom: none;
+}
+
+.food-summary-name {
+
+    color: #ddd;
+
+    font-size: 15px;
+}
+
+.food-summary-qty {
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    background: #321616;
+
+    border: 1px solid #5e1a1a;
+
+    border-radius: 8px;
+
+    min-width: 38px;
+
+    padding: 5px 8px;
+
+    text-align: center;
+}
+
+.no-orders {
+
+    color: #777;
+
+    padding: 5px 0;
+
+}
 
 .close-admin {
 
@@ -515,6 +521,7 @@ input {
 
     border-radius: 8px;
 
+    cursor: pointer;
 }
 
 </style>
@@ -531,21 +538,15 @@ input {
 <div class="header">
 
     <div class="header-icon">
-
         🍱
-
     </div>
 
     <h1>
-
         HOSTELBITE
-
     </h1>
 
     <p>
-
         Your Hostel Meal Companion
-
     </p>
 
 </div>
@@ -557,20 +558,13 @@ input {
 <div>
 
     <div class="section-title">
-
         Place Your Order
-
     </div>
 
-
     <input
-
         id="name"
-
         type="text"
-
         placeholder="Enter your name"
-
     >
 
 </div>
@@ -588,9 +582,7 @@ input {
     <div class="total-row">
 
         <span>
-
             TOTAL
-
         </span>
 
         <span
@@ -607,9 +599,7 @@ input {
 
 
 <button
-
     class="order-button"
-
     onclick="placeOrder()">
 
     PLACE ORDER
@@ -618,9 +608,7 @@ input {
 
 
 <button
-
     class="admin-button"
-
     onclick="openAdmin()">
 
     ⚙️ ADMIN
@@ -628,17 +616,21 @@ input {
 </button>
 
 
+<!-- =========================
+     ADMIN PANEL
+========================= -->
+
 <div
     class="admin-panel"
     id="adminPanel">
 
 
     <h2>
-
         🔐 ADMIN PANEL
-
     </h2>
 
+
+    <!-- SUMMARY -->
 
     <div class="summary">
 
@@ -682,10 +674,10 @@ input {
     </div>
 
 
+    <!-- FOOD OPTIONS -->
+
     <h2>
-
         🍽️ FOOD OPTIONS
-
     </h2>
 
 
@@ -696,10 +688,24 @@ input {
     </div>
 
 
+    <!-- FOOD SUMMARY -->
+
     <h2>
+        📦 FOOD SUMMARY
+    </h2>
 
+
+    <div id="foodSummary">
+
+        Loading...
+
+    </div>
+
+
+    <!-- INDIVIDUAL ORDERS -->
+
+    <h2>
         📊 TODAY'S ORDERS
-
     </h2>
 
 
@@ -711,9 +717,7 @@ input {
 
 
     <button
-
         onclick="loadData()"
-
         style="
             width:100%;
             padding:11px;
@@ -722,6 +726,7 @@ input {
             color:white;
             border-radius:8px;
             margin-top:10px;
+            cursor:pointer;
         ">
 
         🔄 REFRESH
@@ -730,9 +735,7 @@ input {
 
 
     <button
-
         class="close-admin"
-
         onclick="closeAdmin()">
 
         CLOSE ADMIN
@@ -752,11 +755,10 @@ input {
 
 
 /* =================================
-   YOUR GOOGLE APPS SCRIPT URL
+   GOOGLE APPS SCRIPT URL
 ================================= */
 
 const SCRIPT_URL =
-
 "https://script.google.com/macros/s/AKfycbzPkRPBboQMzbHS0Eq2NpDCBEUpiOmDY1wBxaPdovqR7vrXTlHjPQ24pTFA_NgxOqWa/exec";
 
 
@@ -772,7 +774,7 @@ let quantities = {};
 
 
 /* =================================
-   LOAD
+   LOAD DATA
 ================================= */
 
 function loadData() {
@@ -784,18 +786,34 @@ function loadData() {
     )
 
     .then(
-        response =>
-            response.json()
+        response => {
+
+            if (!response.ok) {
+
+                throw new Error(
+                    "Unable to connect to server."
+                );
+
+            }
+
+            return response.json();
+
+        }
     )
 
     .then(
         data => {
 
             menu =
-                data.menu || [];
+                Array.isArray(data.menu)
+                ? data.menu
+                : [];
+
 
             orders =
-                data.orders || [];
+                Array.isArray(data.orders)
+                ? data.orders
+                : [];
 
 
             renderMenu();
@@ -812,12 +830,24 @@ function loadData() {
 
             console.error(error);
 
-            document
-                .getElementById(
+
+            const menuElement =
+                document.getElementById(
                     "menu"
-                )
-                .innerHTML =
-                "Unable to load menu.";
+                );
+
+
+            if (menuElement) {
+
+                menuElement.innerHTML =
+
+                    "<p style='color:#888'>" +
+
+                    "Unable to load menu." +
+
+                    "</p>";
+
+            }
 
         }
     );
@@ -832,10 +862,14 @@ function loadData() {
 function renderMenu() {
 
     const container =
-        document
-            .getElementById(
-                "menu"
-            );
+        document.getElementById(
+            "menu"
+        );
+
+
+    if (!container) {
+        return;
+    }
 
 
     if (menu.length === 0) {
@@ -868,21 +902,23 @@ function renderMenu() {
             const items =
                 menu.filter(
                     item =>
-                        item.meal === meal
+                        String(item.meal)
+                        .toLowerCase()
+                        ===
+                        meal.toLowerCase()
                 );
 
 
-            if (items.length === 0)
+            if (items.length === 0) {
                 return;
+            }
 
 
             html += `
 
-                <div
-                    class="meal-section">
+                <div class="meal-section">
 
-                    <div
-                        class="meal-title">
+                    <div class="meal-title">
 
                         ${
                             meal === "Lunch"
@@ -912,11 +948,9 @@ function renderMenu() {
 
                     html += `
 
-                        <div
-                            class="food-card">
+                        <div class="food-card">
 
-                            <div
-                                class="food-name">
+                            <div class="food-name">
 
                                 ${escapeHTML(
                                     item.food
@@ -925,23 +959,24 @@ function renderMenu() {
                             </div>
 
 
-                            <div
-                                class="food-price">
+                            <div class="food-price">
 
-                                ₹${item.price}
+                                ₹${Number(
+                                    item.price
+                                ) || 0}
 
                             </div>
 
 
-                            <div
-                                class="quantity">
+                            <div class="quantity">
 
                                 <button
-                                    onclick=
-                                    "changeQty(
-                                        '${item.id}',
-                                        -1
-                                    )">
+                                    onclick="
+                                        changeQty(
+                                            '${escapeAttribute(item.id)}',
+                                            -1
+                                        )
+                                    ">
 
                                     −
 
@@ -950,8 +985,9 @@ function renderMenu() {
 
                                 <div
                                     class="qty-value"
-                                    id=
-                                    "qty-${item.id}">
+                                    id="qty-${escapeAttribute(
+                                        item.id
+                                    )}">
 
                                     ${
                                         quantities[
@@ -963,11 +999,12 @@ function renderMenu() {
 
 
                                 <button
-                                    onclick=
-                                    "changeQty(
-                                        '${item.id}',
-                                        1
-                                    )">
+                                    onclick="
+                                        changeQty(
+                                            '${escapeAttribute(item.id)}',
+                                            1
+                                        )
+                                    ">
 
                                     +
 
@@ -995,7 +1032,7 @@ function renderMenu() {
 
 
 /* =================================
-   QUANTITY
+   CHANGE QUANTITY
 ================================= */
 
 function changeQty(
@@ -1015,7 +1052,9 @@ function changeQty(
     quantities[id] += amount;
 
 
-    if (quantities[id] < 0) {
+    if (
+        quantities[id] < 0
+    ) {
 
         quantities[id] = 0;
 
@@ -1023,10 +1062,9 @@ function changeQty(
 
 
     const element =
-        document
-            .getElementById(
-                "qty-" + id
-            );
+        document.getElementById(
+            "qty-" + id
+        );
 
 
     if (element) {
@@ -1043,7 +1081,7 @@ function changeQty(
 
 
 /* =================================
-   TOTAL
+   CALCULATE TOTAL
 ================================= */
 
 function calculateTotal() {
@@ -1055,23 +1093,35 @@ function calculateTotal() {
         item => {
 
             const qty =
-                quantities[item.id] || 0;
+                Number(
+                    quantities[item.id]
+                ) || 0;
 
 
             total +=
                 qty *
-                Number(item.price);
+                (
+                    Number(
+                        item.price
+                    ) || 0
+                );
 
         }
     );
 
 
-    document
-        .getElementById(
+    const totalElement =
+        document.getElementById(
             "total"
-        )
-        .innerText =
-        "₹" + total;
+        );
+
+
+    if (totalElement) {
+
+        totalElement.innerText =
+            "₹" + total;
+
+    }
 
 }
 
@@ -1082,13 +1132,14 @@ function calculateTotal() {
 
 function placeOrder() {
 
+    const nameElement =
+        document.getElementById(
+            "name"
+        );
+
+
     const name =
-        document
-            .getElementById(
-                "name"
-            )
-            .value
-            .trim();
+        nameElement.value.trim();
 
 
     if (!name) {
@@ -1102,9 +1153,7 @@ function placeOrder() {
     }
 
 
-    const selectedItems =
-        [];
-
+    const selectedItems = [];
 
     let total = 0;
 
@@ -1113,27 +1162,43 @@ function placeOrder() {
         item => {
 
             const qty =
-                quantities[item.id] || 0;
+                Number(
+                    quantities[item.id]
+                ) || 0;
 
 
             if (qty > 0) {
 
                 selectedItems.push({
 
-                    food: item.food,
+                    food:
+                        String(
+                            item.food || ""
+                        ),
 
-                    meal: item.meal,
+                    meal:
+                        String(
+                            item.meal || ""
+                        ),
 
-                    quantity: qty,
+                    quantity:
+                        qty,
 
-                    price: item.price
+                    price:
+                        Number(
+                            item.price
+                        ) || 0
 
                 });
 
 
                 total +=
                     qty *
-                    Number(item.price);
+                    (
+                        Number(
+                            item.price
+                        ) || 0
+                    );
 
             }
 
@@ -1154,14 +1219,13 @@ function placeOrder() {
     }
 
 
-    const meals =
-        [
-            ...new Set(
-                selectedItems.map(
-                    item => item.meal
-                )
+    const meals = [
+        ...new Set(
+            selectedItems.map(
+                item => item.meal
             )
-        ];
+        )
+    ];
 
 
     const meal =
@@ -1205,38 +1269,53 @@ function placeOrder() {
 
 
     fetch(
-
         SCRIPT_URL,
-
         {
-
             method: "POST",
-
             body: data
+        }
+    )
+    .then(
+        response => {
+
+            if (!response.ok) {
+
+                throw new Error(
+                    "Order failed."
+                );
+
+            }
 
         }
+    )
+    .then(
+        () => {
 
+            alert(
+                "✓ Order received!"
+            );
+
+            nameElement.value = "";
+
+            quantities = {};
+
+            renderMenu();
+
+            calculateTotal();
+
+        }
+    )
+    .catch(
+        error => {
+
+            console.error(error);
+
+            alert(
+                "Order could not be submitted. Please try again."
+            );
+
+        }
     );
-
-
-    alert(
-        "✓ Order received!"
-    );
-
-
-    document
-        .getElementById(
-            "name"
-        )
-        .value = "";
-
-
-    quantities = {};
-
-
-    renderMenu();
-
-    calculateTotal();
 
 }
 
@@ -1302,10 +1381,14 @@ function closeAdmin() {
 function renderAdmin() {
 
     const container =
-        document
-            .getElementById(
-                "adminMenu"
-            );
+        document.getElementById(
+            "adminMenu"
+        );
+
+
+    if (!container) {
+        return;
+    }
 
 
     let html = "";
@@ -1320,8 +1403,7 @@ function renderAdmin() {
 
             html += `
 
-                <div
-                    class="admin-section">
+                <div class="admin-section">
 
                     <h3>
 
@@ -1341,7 +1423,10 @@ function renderAdmin() {
             const items =
                 menu.filter(
                     item =>
-                        item.meal === meal
+                        String(item.meal)
+                        .toLowerCase()
+                        ===
+                        meal.toLowerCase()
                 );
 
 
@@ -1371,12 +1456,9 @@ function renderAdmin() {
 
                     html += `
 
-                        <div
-                            class="admin-food">
+                        <div class="admin-food">
 
-                            <div
-                                class=
-                                "admin-food-name">
+                            <div class="admin-food-name">
 
                                 ${escapeHTML(
                                     item.food
@@ -1385,25 +1467,23 @@ function renderAdmin() {
                             </div>
 
 
-                            <div
-                                class=
-                                "admin-food-price">
+                            <div class="admin-food-price">
 
-                                ₹${item.price}
+                                ₹${Number(
+                                    item.price
+                                ) || 0}
 
                             </div>
 
 
-                            <div
-                                class=
-                                "admin-actions">
+                            <div class="admin-actions">
 
                                 <button
-
-                                    onclick=
-                                    "editFood(
-                                        '${item.id}'
-                                    )">
+                                    onclick="
+                                        editFood(
+                                            '${escapeAttribute(item.id)}'
+                                        )
+                                    ">
 
                                     ✏️ EDIT
 
@@ -1411,11 +1491,11 @@ function renderAdmin() {
 
 
                                 <button
-
-                                    onclick=
-                                    "deleteFood(
-                                        '${item.id}'
-                                    )">
+                                    onclick="
+                                        deleteFood(
+                                            '${escapeAttribute(item.id)}'
+                                        )
+                                    ">
 
                                     🗑️ DELETE
 
@@ -1433,26 +1513,31 @@ function renderAdmin() {
 
             html += `
 
-                    <button
+                <button
+                    class="add-food"
+                    onclick="
+                        addFood('${meal}')
+                    ">
 
-                        class="add-food"
+                    + ADD FOOD ITEM
 
-                        onclick=
-                        "addFood('${meal}')">
-
-                        + ADD FOOD ITEM
-
-                    </button>
-
-                </div>
+                </button>
 
             `;
+
+
+            html += "</div>";
 
         }
     );
 
 
     container.innerHTML = html;
+
+
+    renderOrders();
+
+    updateSummary();
 
 }
 
@@ -1469,7 +1554,9 @@ function addFood(meal) {
         );
 
 
-    if (!food) return;
+    if (!food) {
+        return;
+    }
 
 
     const price =
@@ -1517,19 +1604,12 @@ function addFood(meal) {
 
 
     fetch(
-
         SCRIPT_URL,
-
         {
-
             method: "POST",
-
             body: data
-
         }
-
     )
-
     .then(
         () => {
 
@@ -1538,6 +1618,17 @@ function addFood(meal) {
             );
 
             loadData();
+
+        }
+    )
+    .catch(
+        error => {
+
+            console.error(error);
+
+            alert(
+                "Unable to add food item."
+            );
 
         }
     );
@@ -1553,11 +1644,16 @@ function editFood(id) {
 
     const item =
         menu.find(
-            x => x.id === id
+            x =>
+                String(x.id)
+                ===
+                String(id)
         );
 
 
-    if (!item) return;
+    if (!item) {
+        return;
+    }
 
 
     const food =
@@ -1567,7 +1663,9 @@ function editFood(id) {
         );
 
 
-    if (!food) return;
+    if (!food) {
+        return;
+    }
 
 
     const price =
@@ -1622,19 +1720,12 @@ function editFood(id) {
 
 
     fetch(
-
         SCRIPT_URL,
-
         {
-
             method: "POST",
-
             body: data
-
         }
-
     )
-
     .then(
         () => {
 
@@ -1643,6 +1734,17 @@ function editFood(id) {
             );
 
             loadData();
+
+        }
+    )
+    .catch(
+        error => {
+
+            console.error(error);
+
+            alert(
+                "Unable to update food item."
+            );
 
         }
     );
@@ -1658,11 +1760,16 @@ function deleteFood(id) {
 
     const item =
         menu.find(
-            x => x.id === id
+            x =>
+                String(x.id)
+                ===
+                String(id)
         );
 
 
-    if (!item) return;
+    if (!item) {
+        return;
+    }
 
 
     if (
@@ -1695,19 +1802,12 @@ function deleteFood(id) {
 
 
     fetch(
-
         SCRIPT_URL,
-
         {
-
             method: "POST",
-
             body: data
-
         }
-
     )
-
     .then(
         () => {
 
@@ -1718,7 +1818,88 @@ function deleteFood(id) {
             loadData();
 
         }
+    )
+    .catch(
+        error => {
+
+            console.error(error);
+
+            alert(
+                "Unable to delete food item."
+            );
+
+        }
     );
+
+}
+
+
+/* =================================
+   NORMALIZE ORDER ITEMS
+================================= */
+
+function getOrderItems(order) {
+
+    if (!order) {
+        return [];
+    }
+
+
+    let items =
+        order.items;
+
+
+    /*
+       If Apps Script already returned
+       an array, use it.
+    */
+
+    if (
+        Array.isArray(items)
+    ) {
+
+        return items;
+
+    }
+
+
+    /*
+       If items came as JSON text,
+       convert it into an array.
+    */
+
+    if (
+        typeof items === "string"
+    ) {
+
+        try {
+
+            const parsed =
+                JSON.parse(items);
+
+
+            if (
+                Array.isArray(parsed)
+            ) {
+
+                return parsed;
+
+            }
+
+        }
+        catch (error) {
+
+            console.warn(
+                "Could not parse order items:",
+                items
+            );
+
+        }
+
+    }
+
+
+    return [];
 
 }
 
@@ -1730,10 +1911,14 @@ function deleteFood(id) {
 function renderOrders() {
 
     const container =
-        document
-            .getElementById(
-                "adminOrders"
-            );
+        document.getElementById(
+            "adminOrders"
+        );
+
+
+    if (!container) {
+        return;
+    }
 
 
     if (
@@ -1741,7 +1926,9 @@ function renderOrders() {
     ) {
 
         container.innerHTML =
-            "No orders today.";
+            "<div class='no-orders'>" +
+            "No orders today." +
+            "</div>";
 
         return;
 
@@ -1754,16 +1941,21 @@ function renderOrders() {
     orders.forEach(
         order => {
 
+            const items =
+                getOrderItems(
+                    order
+                );
+
+
             html += `
 
-                <div
-                    class="order-card">
+                <div class="order-card">
 
                     <strong>
 
                         👤
                         ${escapeHTML(
-                            order.name
+                            order.name || ""
                         )}
 
                     </strong>
@@ -1776,7 +1968,7 @@ function renderOrders() {
                         ">
 
                         ${escapeHTML(
-                            order.meal
+                            order.meal || ""
                         )}
 
                     </div>
@@ -1784,7 +1976,7 @@ function renderOrders() {
             `;
 
 
-            order.items.forEach(
+            items.forEach(
                 item => {
 
                     html += `
@@ -1797,12 +1989,16 @@ function renderOrders() {
 
                             •
                             ${escapeHTML(
-                                item.food
+                                item.food || ""
                             )}
 
                             ×
 
-                            ${item.quantity}
+                            ${
+                                Number(
+                                    item.quantity
+                                ) || 0
+                            }
 
                         </div>
 
@@ -1821,19 +2017,22 @@ function renderOrders() {
                         font-weight:bold;
                         ">
 
-                        ₹${order.total}
+                        ₹${
+                            Number(
+                                order.total
+                            ) || 0
+                        }
 
                     </div>
 
 
                     <button
-
                         class="delete-order"
-
-                        onclick=
-                        "deleteOrder(
-                            ${order.row}
-                        )">
+                        onclick="
+                            deleteOrder(
+                                ${Number(order.row) || 0}
+                            )
+                        ">
 
                         🗑️ DELETE ORDER
 
@@ -1854,6 +2053,7 @@ function renderOrders() {
 
 /* =================================
    ADMIN SUMMARY
+   ITEM-WISE LUNCH / DINNER
 ================================= */
 
 function updateSummary() {
@@ -1861,16 +2061,113 @@ function updateSummary() {
     let itemCount = 0;
 
 
+    const foodSummary = {
+
+        Lunch: {},
+
+        Dinner: {}
+
+    };
+
+
     orders.forEach(
         order => {
 
-            order.items.forEach(
+            const items =
+                getOrderItems(
+                    order
+                );
+
+
+            items.forEach(
                 item => {
 
-                    itemCount +=
+                    const quantity =
                         Number(
                             item.quantity
                         ) || 0;
+
+
+                    itemCount +=
+                        quantity;
+
+
+                    let meal =
+                        String(
+                            item.meal ||
+                            ""
+                        ).trim();
+
+
+                    /*
+                       Some older orders may not
+                       have meal inside each item.
+                    */
+
+                    if (
+                        meal !== "Lunch" &&
+                        meal !== "Dinner"
+                    ) {
+
+                        const orderMeal =
+                            String(
+                                order.meal ||
+                                ""
+                            );
+
+
+                        if (
+                            orderMeal
+                            .includes(
+                                "Lunch"
+                            )
+                        ) {
+
+                            meal = "Lunch";
+
+                        }
+                        else if (
+                            orderMeal
+                            .includes(
+                                "Dinner"
+                            )
+                        ) {
+
+                            meal = "Dinner";
+
+                        }
+                    }
+
+
+                    if (
+                        meal !== "Lunch" &&
+                        meal !== "Dinner"
+                    ) {
+
+                        return;
+
+                    }
+
+
+                    const food =
+                        String(
+                            item.food ||
+                            "Unknown Item"
+                        ).trim();
+
+
+                    if (
+                        !foodSummary[meal][food]
+                    ) {
+
+                        foodSummary[meal][food] =
+                            0;
+
+                    }
+
+
+                    foodSummary[meal][food] +=
+                        quantity;
 
                 }
             );
@@ -1879,20 +2176,169 @@ function updateSummary() {
     );
 
 
-    document
-        .getElementById(
+    const totalOrders =
+        document.getElementById(
             "totalOrders"
-        )
-        .innerText =
-        orders.length;
+        );
 
 
-    document
-        .getElementById(
+    const totalItems =
+        document.getElementById(
             "totalItems"
-        )
-        .innerText =
-        itemCount;
+        );
+
+
+    if (totalOrders) {
+
+        totalOrders.innerText =
+            orders.length;
+
+    }
+
+
+    if (totalItems) {
+
+        totalItems.innerText =
+            itemCount;
+
+    }
+
+
+    renderFoodSummary(
+        foodSummary
+    );
+
+}
+
+
+/* =================================
+   RENDER FOOD SUMMARY
+================================= */
+
+function renderFoodSummary(
+    summary
+) {
+
+    const container =
+        document.getElementById(
+            "foodSummary"
+        );
+
+
+    if (!container) {
+        return;
+    }
+
+
+    let html = "";
+
+
+    [
+        "Lunch",
+        "Dinner"
+    ]
+    .forEach(
+        meal => {
+
+            const foods =
+                summary[meal] || {};
+
+
+            const foodNames =
+                Object.keys(
+                    foods
+                );
+
+
+            html += `
+
+                <div class="food-summary">
+
+                    <div class="food-summary-title">
+
+                        ${
+                            meal === "Lunch"
+                            ? "☀️"
+                            : "🌙"
+                        }
+
+                        ${meal}
+
+                    </div>
+
+            `;
+
+
+            if (
+                foodNames.length === 0
+            ) {
+
+                html += `
+
+                    <div class="no-orders">
+
+                        No orders
+
+                    </div>
+
+                `;
+
+            }
+            else {
+
+                foodNames
+                    .sort()
+                    .forEach(
+                        food => {
+
+                            html += `
+
+                                <div
+                                    class="food-summary-row">
+
+                                    <div
+                                        class="food-summary-name">
+
+                                        ${escapeHTML(
+                                            food
+                                        )}
+
+                                    </div>
+
+
+                                    <div
+                                        class="food-summary-qty">
+
+                                        ${
+                                            foods[
+                                                food
+                                            ]
+                                        }
+
+                                    </div>
+
+                                </div>
+
+                            `;
+
+                        }
+                    );
+
+            }
+
+
+            html += `
+
+                </div>
+
+            `;
+
+        }
+    );
+
+
+    container.innerHTML =
+        html;
 
 }
 
@@ -1902,6 +2348,20 @@ function updateSummary() {
 ================================= */
 
 function deleteOrder(row) {
+
+    if (
+        !row ||
+        Number(row) < 2
+    ) {
+
+        alert(
+            "Invalid order."
+        );
+
+        return;
+
+    }
+
 
     if (
         !confirm(
@@ -1931,19 +2391,12 @@ function deleteOrder(row) {
 
 
     fetch(
-
         SCRIPT_URL,
-
         {
-
             method: "POST",
-
             body: data
-
         }
-
     )
-
     .then(
         () => {
 
@@ -1954,182 +2407,29 @@ function deleteOrder(row) {
             loadData();
 
         }
-    );
+    )
+    .catch(
+        error => {
 
-}
+            console.error(error);
 
-
-/* =================================
-   ADMIN RENDER
-================================= */
-
-function renderAdmin() {
-
-    const container =
-        document
-            .getElementById(
-                "adminMenu"
+            alert(
+                "Unable to delete order."
             );
-
-
-    let html = "";
-
-
-    [
-        "Lunch",
-        "Dinner"
-    ]
-    .forEach(
-        meal => {
-
-            html += `
-
-                <div
-                    class="admin-section">
-
-                    <h3>
-
-                        ${
-                            meal === "Lunch"
-                            ? "☀️"
-                            : "🌙"
-                        }
-
-                        ${meal}
-
-                    </h3>
-
-            `;
-
-
-            const items =
-                menu.filter(
-                    item =>
-                        item.meal === meal
-                );
-
-
-            if (
-                items.length === 0
-            ) {
-
-                html += `
-
-                    <p
-                        style="
-                        color:#777;
-                        margin:10px 0;
-                        ">
-
-                        No food items added.
-
-                    </p>
-
-                `;
-
-            }
-
-
-            items.forEach(
-                item => {
-
-                    html += `
-
-                        <div
-                            class="admin-food">
-
-                            <div
-                                class=
-                                "admin-food-name">
-
-                                ${escapeHTML(
-                                    item.food
-                                )}
-
-                            </div>
-
-
-                            <div
-                                class=
-                                "admin-food-price">
-
-                                ₹${item.price}
-
-                            </div>
-
-
-                            <div
-                                class=
-                                "admin-actions">
-
-                                <button
-                                    onclick=
-                                    "editFood(
-                                    '${item.id}'
-                                    )">
-
-                                    ✏️ EDIT
-
-                                </button>
-
-
-                                <button
-                                    onclick=
-                                    "deleteFood(
-                                    '${item.id}'
-                                    )">
-
-                                    🗑️ DELETE
-
-                                </button>
-
-                            </div>
-
-                        </div>
-
-                    `;
-
-                }
-            );
-
-
-            html += `
-
-                <button
-
-                    class="add-food"
-
-                    onclick=
-                    "addFood('${meal}')">
-
-                    + ADD FOOD ITEM
-
-                </button>
-
-            `;
-
-
-            html += "</div>";
 
         }
     );
 
-
-    container.innerHTML = html;
-
-
-    renderOrders();
-
-    updateSummary();
-
 }
 
 
 /* =================================
-   SECURITY HELPER
+   ESCAPE HTML
 ================================= */
 
-function escapeHTML(text) {
+function escapeHTML(
+    text
+) {
 
     const div =
         document.createElement(
@@ -2138,10 +2438,35 @@ function escapeHTML(text) {
 
 
     div.textContent =
-        text;
+        String(
+            text ?? ""
+        );
 
 
     return div.innerHTML;
+
+}
+
+
+/* =================================
+   ESCAPE ATTRIBUTE
+================================= */
+
+function escapeAttribute(
+    text
+) {
+
+    return String(
+        text ?? ""
+    )
+    .replace(
+        /\\/g,
+        "\\\\"
+    )
+    .replace(
+        /'/g,
+        "\\'"
+    );
 
 }
 
